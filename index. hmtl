@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>إلى چوچو ❤️</title>
+<style>
+*{box-sizing:border-box}
+body{
+ margin:0;
+ font-family:Tahoma,Arial,sans-serif;
+ background:linear-gradient(135deg,#170817,#351027,#160b20);
+ color:white;
+ text-align:center;
+ min-height:100vh;
+ overflow-x:hidden;
+}
+.container{
+ padding:35px 20px;
+ max-width:650px;
+ margin:auto;
+}
+.heart{font-size:65px;margin:20px}
+h1{color:#ff8bbd;font-size:35px}
+h2{color:#ffc0d9}
+.card{
+ background:rgba(255,255,255,.09);
+ border:1px solid rgba(255,255,255,.15);
+ border-radius:25px;
+ padding:25px;
+ margin-top:25px;
+ line-height:2.1;
+ font-size:19px;
+ box-shadow:0 10px 35px #0005;
+}
+button{
+ background:linear-gradient(45deg,#ff438e,#c52c77);
+ color:white;
+ border:0;
+ padding:16px 35px;
+ border-radius:30px;
+ font-size:19px;
+ margin:20px;
+ cursor:pointer;
+}
+#message{display:none}
+.ending{color:#ff9bc5;font-size:23px}
+.floating{
+ position:fixed;
+ bottom:-30px;
+ animation:up 7s linear infinite;
+ pointer-events:none;
+}
+@keyframes up{
+ to{transform:translateY(-110vh) rotate(360deg);opacity:0}
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+ <div class="heart">❤️</div>
+ <h1>إلى أميرتي چوچو</h1>
+ <h2>كل سنة وإنتي أجمل حاجة في حياتي 😍</h2>
+
+ <div class="card">
+  <h2>عندي ليكي رسالة صغيرة ❤️</h2>
+  <p>في كلام كتير جوايا نفسي أقولك عليه...</p>
+  <button onclick="openMessage()">افتحي رسالتك يا چوچو ❤️</button>
+ </div>
+
+ <div class="card" id="message">
+  بصي يا أحلى وأغلى حاجة في حياتي ❤️😍
+
+  <p>
+  انهارده يوم مميز جدًا بالنسبة ليا، اليوم اللي اتولدت فيه أميرتي الجميلة، واليوم اللي اتولدت فيه أحلى وأجمل بنت في عيني ❤️🌏😍
+  </p>
+
+  <p>
+  كل سنة وإنتي طيبة يا رووووح قلبييي، وعقبال سنين كتير يا روحي وإحنا مع بعض، جنب بعض، بنعيش أحلى أيام عمرنا، ونفرح سوا بكل لحظة حلوة، ونفضل دايمًا سند لبعض ❤️🥹
+  </p>
+
+  <p>
+  كل سنة وإنتي حبيبتي، وروحي، وقلبي، وعمري، وكل حياتي 😍❤️ كل سنة وإنتي معايا وجمبي، وكل سنة وإنتي أقرب واحدة لقلبي، يا أغلى ما ليا ويا أجمل حاجة حصلتلي في حياتي.
+  </p>
+
+  <p>
+  كل سنة وإنتي طيبة يا أحلى وأجمل چوچو في الدنيا كلها 😍❤️ يا چنجونتي الجميلة، يا فرحة قلبي، ويا أحلى صدفة وأجمل نصيب. بجد مهما أتكلم عنك وعن غلاوتك عندي، مش هعرف أوصفلك إنتي بالنسبالي إيه، ولا هعرف أقولك قد إيه وجودك في حياتي فارق معايا ❤️😘
+  </p>
+
+  <p>
+  نفسي أشوفك دايمًا مبسوطة، وأكون سبب في ضحكتك وفرحتك، وأفضل جنبك في كل أيامك، الحلوة منها والصعبة. نفسي نحقق كل أحلامنا سوا، ونفضل نفتكر كل ذكرياتنا ونضحك عليها، ونعيش أيام كتير حلوة لسه مستنيانا إن شاء الله 🥹❤️🌏
+  </p>
+
+  <p>
+  وعقبال كل السنين الحلوة اللي هنقضيها مع بعض إن شاء الله، وكل عيد ميلاد ليكي أكون أول واحد يفرح بيه معاكي، وأفضل أقولك كل سنة وإنتي حبيبتي وأجمل نعمة في حياتي. وربنا يخليكي ليا يا رب، ويفرح قلبك، ويحققلك كل اللي نفسك فيه، وما يحرمنيش منك أبدًا يا أغلى وأجمل حاجة حصلتلي في حياتي ❤️❤️😍
+  </p>
+
+  <p class="ending">
+  بحبك يا روووح قلبييي، حب أكبر من أي كلام ممكن أقوله، وإنتي عندي بالدنيا كلها يا چوچو ❤️❤️❤️😍😘🌏
+  </p>
+ </div>
+
+ <div class="heart">💗🌹💗</div>
+ <p>صممت بكل الحب علشانك يا چوچو ❤️</p>
+</div>
+
+<script>
+function openMessage(){
+ document.getElementById("message").style.display="block";
+ document.querySelector("button").style.display="none";
+}
+function heart(){
+ let h=document.createElement("div");
+ h.className="floating";
+ h.innerHTML=["❤️","💗","💕","🌸"][Math.floor(Math.random()*4)];
+ h.style.left=Math.random()*100+"%";
+ h.style.fontSize=(18+Math.random()*20)+"px";
+ h.style.animationDuration=(5+Math.random()*5)+"s";
+ document.body.appendChild(h);
+ setTimeout(()=>h.remove(),10000);
+}
+setInterval(heart,500);
+</script>
+</body>
+</html>
